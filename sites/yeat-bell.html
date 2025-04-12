@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound Button</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #soundButton {
+      width: calc(100% - 40px); /* 20px Abstand links und rechts */
+      max-width: 350px;         /* kleinerer Button */
+      aspect-ratio: 1 / 1;      /* bleibt rund */
+      border-radius: 50%;
+      background-color: #006803;
+      color: white;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    #soundButton:hover {
+      background-color: #002002;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="soundButton">Yeat Bell</button>
+  <audio id="audioPlayer" src="/sounds/yeat-bell.mp3" loop></audio>
+
+  <script>
+    const button = document.getElementById('soundButton');
+    const audio = document.getElementById('audioPlayer');
+
+    button.addEventListener('click', () => {
+      audio.volume = 1.0;
+      audio.play();
+    });
+  </script>
+
+</body>
+</html>
