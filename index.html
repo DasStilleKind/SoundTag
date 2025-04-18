@@ -1,142 +1,69 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Start - Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoundTag | Sounds</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       background-color: #1e1e1e;
-      color: #f0f0f0;
+      color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      padding: 20px;
+      padding: 50px 20px;
     }
 
     h1 {
-      margin: 20px 0;
-      font-size: 28px;
-      text-align: center;
-      animation: fadeIn 1s ease-out;
-    }
-
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    .category {
       margin-bottom: 40px;
-      width: 100%;
-      max-width: 800px;
-      text-align: center;
     }
 
-    .category h2 {
-      margin-bottom: 15px;
-    }
-
-    .button-container {
+    .menu {
       display: flex;
       flex-direction: column;
       gap: 15px;
-    }
-
-    button {
-      background-color: #dbdbdb;
-      color: #505964;
-      border: none;
-      padding: 15px;
-      font-size: 18px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.3s;
       width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
+      max-width: 400px;
     }
 
-    button:hover {
-      background-color: #cfcfcf;
+    .menu a {
+      display: block;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: background-color 0.3s ease;
     }
 
-    .responsive-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-
-    /* Desktop Styles */
-    @media (min-width: 768px) {
-      .button-container {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      button {
-        max-width: none;
-        width: 200px;
-      }
-
-      .responsive-grid {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 60px;
-      }
-
-      .category {
-        flex: 1 1 300px;
-        max-width: 300px;
-      }
+    .menu a:hover {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝚝𝚘 𝚝𝚑𝚎 𝚂𝚝𝚊𝚛𝚝 𝙿𝚊𝚐𝚎!</h1>
-<br><br><br>
-  <div class="responsive-grid">
-    <!-- QR-Code / Bar-Code Section -->
-    <div class="category">
-      <h2>ℚℝ-ℂ𝕠𝕕𝕖 / 𝔹𝕒𝕣-ℂ𝕠𝕕𝕖</h2>
-      <div class="button-container">
-        <button onclick="location.href='Tools/QR-Code/Creator.html'">QR Code Generator</button>
-        <button onclick="location.href='Tools/QR-Code/Scanner.html'">QR Code Scanner</button>
-      </div>
-    </div>
 
-    <!-- Foto Tools Section -->
-    <div class="category">
-      <h2>𝕀𝕞𝕒𝕘𝕖 𝕋𝕠𝕠𝕝𝕤</h2>
-      <div class="button-container">
-        <button onclick="location.href='Tools/Image/data-extractor.html'">Data Extractor</button>
-        <button onclick="location.href='Tools/Image/inverter.html'">Image Inverter</button>
-        <button onclick="location.href='Tools/Image/recolor.html'">Image Recolor</button>
-      </div>
-    </div>
+  <h1>Soundboard Menü</h1>
 
-    <!-- Coming Soon Section -->
-    <div class="category">
-      <h2>𝕆𝕥𝕙𝕖𝕣 𝕊𝕚𝕥𝕖𝕤!</h2>
-      <div class="button-container">
-        <button onclick="location.href='Timm.com'">Online Gallary</button>
-        <button onclick="location.href='Timm.com'">TIMM</button>
-        <button onclick="location.href='https://soundtag.run.place'">NFC Tag Prank!</button>
-        <button onclick="location.href='https://spoo.me/🏫'">School WebSites</button>
-      </div>
-      <br><br><br>
-      <h3>𝓒𝓱𝓮𝓬𝓴 𝓸𝓾𝓽 𝓸𝓾𝓻 𝓢𝓸𝓬𝓲𝓪𝓵𝓼!</h3>
-      <a href="https://guns.lol/lennardo" target="_parent" rel="external">Lennardo</a>
-      <br><br>
-      <a href="https://google.com" target="_parent" rel="external">---</a>
-    </div>
+  <div class="menu">
+    <a href="/sites/blableblu.html">blableblu</a>
+    <a href="/sites/bobritto-bandito.html">bobritto-bandito</a>
+    <a href="/sites/bombardino-crocodilo.html">bombardino-crocodilo</a>
+    <a href="/sites/chicken-jockey.html">chicken-jockey</a>
+    <a href="/sites/goofy-ahh-car-horn.html">goofy-ahh-car-horn</a>
+    <a href="/sites/leck-meine-fetten.html">leck-meine-fetten</a>
+    <a href="/sites/ling-gang-guli.html">ling-gang-guli</a>
+    <a href="/sites/lirili-larila.html">lirili-larila</a>
+    <a href="/sites/loud-moan.html">loud-moan</a>
+    <a href="/sites/niggeralarm.html">niggeralarm</a>
+    <a href="/sites/steves-lava-chicken.html">steves-lava-chicken</a>
+    <a href="/sites/tung-tung-tung.html">tung-tung-tung</a>
+    <a href="/sites/yeat-bell.html">Bell</a>
   </div>
+
 </body>
 </html>
